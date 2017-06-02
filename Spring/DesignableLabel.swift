@@ -31,6 +31,7 @@ import UIKit
             
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = lineHeight
+            paragraphStyle.alignment = self.textAlignment
             
             let attributedString = NSMutableAttributedString(string: text)
             attributedString.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedString.length))
